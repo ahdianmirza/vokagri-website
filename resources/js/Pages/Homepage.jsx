@@ -14,13 +14,14 @@ export default function Homepage(props) {
             <Head title={title} />
 
             {/* Hero Section Start */}
-            <div className="bg-hero-bg min-h-screen bg-cover">
+            <div id="hero" className="bg-hero-bg min-h-screen bg-cover">
                 <div className="mx-[93px]">
                     <Navbar
                         hrefHome="/"
                         hrefBeranda="/"
-                        hrefTentang="/"
-                        hrefLayanan="/"
+                        hrefTentang="#aboutUs"
+                        hrefLayanan="#layanan"
+                        hrefKontak="#kontak"
                         hrefProduk="/"
                         hrefDaftar="/"
                         hrefMasuk="/"
@@ -66,7 +67,7 @@ export default function Homepage(props) {
             {/* Hero Section End */}
 
             {/* About Us Section Start */}
-            <div className="h-[703px] bg-white-primary">
+            <div id="aboutUs" className="h-[703px] bg-white-primary">
                 <div className="mx-[93px] h-full flex justify-center items-center">
                     <div className="w-3/5">
                         <h1 className="text-black-primary text-[52px] font-bold leading-[64px] mb-2">
@@ -113,7 +114,7 @@ export default function Homepage(props) {
             {/* About Us Section End */}
 
             {/* Layanan Section Start */}
-            <div className="h-[703px] bg-page">
+            <div id="layanan" className="h-[703px] bg-page">
                 <div className="text-primary h-full flex flex-col justify-center items-center">
                     <div className="flex flex-col justify-center items-center mb-12">
                         <h1 className="font-semibold text-5xl">Layanan Kami</h1>
@@ -155,7 +156,7 @@ export default function Homepage(props) {
             {/* Layanan Section End */}
 
             {/* Kontak Section End */}
-            <div className="bg-kontak-bg min-h-screen bg-cover">
+            <div id="kontak" className="bg-kontak-bg min-h-screen bg-cover">
                 <div className="mx-[93px] flex items-center">
                     <div className="w-1/2 h-screen flex flex-col justify-center">
                         <div className="mb-8">
@@ -237,7 +238,7 @@ export default function Homepage(props) {
             {/* Kontak Section End */}
 
             {/* Footer Section Start */}
-            <div className="w-full h-[96px] bg-primary">
+            <div id="footer" className="w-full h-[96px] bg-primary">
                 <div className="mx-[93px] h-full flex justify-between items-center">
                     <Logo hrefHome="/" fontColor="text-white-primary" />
                     <p className="text-white-primary text-[14px]">

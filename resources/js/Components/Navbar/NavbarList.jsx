@@ -1,7 +1,7 @@
 import NavbarMenu from "./NavbarMenu";
 
 export default function NavbarList(props) {
-    const { hrefBeranda, hrefTentang, hrefLayanan, hrefProduk } = props;
+    const { hrefBeranda, hrefTentang, hrefLayanan, hrefKontak, hrefProduk } = props;
 
     return (
         <div className="w-full">
@@ -9,6 +9,7 @@ export default function NavbarList(props) {
                 <NavbarMenu hrefMenu={hrefBeranda}>Beranda</NavbarMenu>
                 <NavbarMenu hrefMenu={hrefTentang}>Tentang</NavbarMenu>
                 <NavbarMenu hrefMenu={hrefLayanan}>Layanan</NavbarMenu>
+                <NavbarMenu hrefMenu={hrefKontak}>Kontak</NavbarMenu>
                 <NavbarMenu hrefMenu={hrefProduk}>Produk</NavbarMenu>
             </div>
         </div>

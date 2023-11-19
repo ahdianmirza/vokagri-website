@@ -8,6 +8,7 @@ export default function Navbar(props) {
         hrefBeranda,
         hrefTentang,
         hrefLayanan,
+        hrefKontak,
         hrefProduk,
         hrefDaftar,
         hrefMasuk,
@@ -22,6 +23,7 @@ export default function Navbar(props) {
                 hrefBeranda={hrefBeranda}
                 hrefTentang={hrefTentang}
                 hrefLayanan={hrefLayanan}
+                hrefKontak={hrefKontak}
                 hrefProduk={hrefProduk}
             />
             <AuthButtonList hrefDaftar={hrefDaftar} hrefMasuk={hrefMasuk} />
