@@ -42,7 +42,7 @@ export default function Homepage(props) {
                             </p>
                         </div>
                         <div>
-                            <button className="w-[237px] h-[70px] bg-[#1D7E5A] rounded-lg flex justify-center items-center">
+                            <button className="w-[237px] h-[70px] bg-[#1D7E5A] hover:bg-[#17654a] hover:duration-300 rounded-lg flex justify-center items-center">
                                 <p className="mr-2 text-white-primary font-bold ">
                                     Temukan Layanan
                                 </p>
@@ -84,12 +84,28 @@ export default function Homepage(props) {
                     </div>
                     <div className="w-2/5 flex gap-x-5">
                         <div className="flex flex-col justify-center items-end gap-y-5">
-                            <img src="img/gambar1.png" alt="Gambar 1" />
-                            <img src="img/gambar3.png" alt="Gambar 3" />
+                            <img
+                                className="hover:scale-105 hover:duration-300"
+                                src="img/gambar1.png"
+                                alt="Gambar 1"
+                            />
+                            <img
+                                className="hover:scale-105 hover:duration-300"
+                                src="img/gambar3.png"
+                                alt="Gambar 3"
+                            />
                         </div>
                         <div className="flex flex-col justify-center items-end gap-y-5 mb-[100px]">
-                            <img src="img/gambar2.png" alt="Gambar 2" />
-                            <img src="img/gambar4.png" alt="Gambar 4" />
+                            <img
+                                className="hover:scale-105 hover:duration-300"
+                                src="img/gambar2.png"
+                                alt="Gambar 2"
+                            />
+                            <img
+                                className="hover:scale-105 hover:duration-300"
+                                src="img/gambar4.png"
+                                alt="Gambar 4"
+                            />
                         </div>
                     </div>
                 </div>
@@ -196,7 +212,7 @@ export default function Homepage(props) {
                             />
                             <button
                                 type="button"
-                                className="bg-primary flex justify-center items-center w-full h-[66px] rounded-lg"
+                                className="bg-primary hover:bg-[#06767f] hover:duration-300 flex justify-center items-center w-full h-[66px] rounded-lg"
                             >
                                 <p className="text-white-primary font-semibold text-2xl">
                                     Kirim
