@@ -65,6 +65,37 @@ export default function Homepage(props) {
             </div>
             {/* Hero Section End */}
 
+            {/* About Us Section Start */}
+            <div className="h-[703px] bg-white-primary">
+                <div className="mx-[93px] h-full flex justify-center items-center">
+                    <div className="w-3/5">
+                        <h1 className="text-black-primary text-[52px] font-bold leading-[64px] mb-2">
+                            VokAgri : Nurturing Agriculture Innovation
+                        </h1>
+                        <p className="text-black-primary">
+                            VokAgri adalah aplikasi manajemen yang membantu tiap
+                            pemilik usaha di bidang pertanian untuk
+                            mengoptimalkan keuntungan dan mampu melakukan
+                            tindakan preventif jika ditemukan gejala pada produk
+                            secara efisien. VokAgri.id mengadopsi konsep
+                            manajemen keuangan dengan tampilan yang lebih
+                            sederhana dan mudah dipahami oleh pengguna.
+                        </p>
+                    </div>
+                    <div className="w-2/5 flex gap-x-5">
+                        <div className="flex flex-col justify-center items-end gap-y-5">
+                            <img src="img/gambar1.png" alt="Gambar 1" />
+                            <img src="img/gambar3.png" alt="Gambar 3" />
+                        </div>
+                        <div className="flex flex-col justify-center items-end gap-y-5 mb-[100px]">
+                            <img src="img/gambar2.png" alt="Gambar 2" />
+                            <img src="img/gambar4.png" alt="Gambar 4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* About Us Section End */}
+
             {/* Layanan Section Start */}
             <div className="h-[703px] bg-page">
                 <div className="text-primary h-full flex flex-col justify-center items-center">
@@ -189,12 +220,16 @@ export default function Homepage(props) {
             </div>
             {/* Kontak Section End */}
 
+            {/* Footer Section Start */}
             <div className="w-full h-[96px] bg-primary">
                 <div className="mx-[93px] h-full flex justify-between items-center">
                     <Logo hrefHome="/" fontColor="text-white-primary" />
-                    <p className="text-white-primary text-[14px]">Copyright by VokAgri All Right Reserved. © 2023</p>
+                    <p className="text-white-primary text-[14px]">
+                        Copyright by VokAgri All Right Reserved. © 2023
+                    </p>
                 </div>
             </div>
+            {/* Footer Section End */}
         </div>
     );
 }

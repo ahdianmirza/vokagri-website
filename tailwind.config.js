@@ -21,11 +21,12 @@ export default {
             colors: {
                 primary: "#0E4F55",
                 "white-primary": "#F8FAFC",
-                "page": "#EFFAF4",
+                page: "#EFFAF4",
+                "black-primary": "#3B3B3B",
             },
             backgroundImage: {
                 "hero-bg": "url('img/heroBackground.png')",
-                "kontak-bg": "url('img/kontakBackground.png')"
+                "kontak-bg": "url('img/kontakBackground.png')",
             },
         },
     },
