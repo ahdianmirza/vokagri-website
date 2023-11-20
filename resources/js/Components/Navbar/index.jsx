@@ -13,12 +13,16 @@ export default function Navbar(props) {
         hrefDaftar,
         hrefMasuk,
         fontColor,
-        width,
+        logoWidth,
+        buttonWidth,
+        buttonHeight,
+        buttonBg,
+        buttonBgHover
     } = props;
 
     return (
         <nav className="flex items-center justify-between mt-[15px]">
-            <Logo width={width} hrefHome={hrefHome} fontColor={fontColor} />
+            <Logo width={logoWidth} hrefHome={hrefHome} fontColor={fontColor} />
             <NavbarList
                 hrefBeranda={hrefBeranda}
                 hrefTentang={hrefTentang}
@@ -26,7 +30,14 @@ export default function Navbar(props) {
                 hrefKontak={hrefKontak}
                 hrefProduk={hrefProduk}
             />
-            <AuthButtonList hrefDaftar={hrefDaftar} hrefMasuk={hrefMasuk} />
+            <AuthButtonList
+                hrefDaftar={hrefDaftar}
+                hrefMasuk={hrefMasuk}
+                width={buttonWidth}
+                height={buttonHeight}
+                buttonBg={buttonBg}
+                buttonBgHover={buttonBgHover}
+            />
         </nav>
     );
 }

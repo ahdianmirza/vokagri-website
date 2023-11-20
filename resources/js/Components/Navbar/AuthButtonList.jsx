@@ -1,19 +1,23 @@
+import ButtonLink from "../ButtonLink";
 import NavbarMenu from "./NavbarMenu";
 
 export default function AuthButtonList(props) {
-    const { hrefDaftar, hrefMasuk } = props;
+    const { hrefDaftar, hrefMasuk, width, height, buttonBg, buttonBgHover } = props;
 
     return (
         <div className="w-full flex justify-end items-center">
             <NavbarMenu hrefMenu={hrefDaftar} addStyle="mr-8">
                 Daftar
             </NavbarMenu>
-            <a
-                href={hrefMasuk}
-                className="flex justify-center items-center w-[120px] h-10 bg-primary hover:bg-[#0196a0] hover:duration-300 rounded-lg text-white font-semibold"
+            <ButtonLink
+                hrefLink={hrefMasuk}
+                width={width}
+                height={height}
+                buttonBg={buttonBg}
+                buttonBgHover={buttonBgHover}
             >
                 Masuk
-            </a>
+            </ButtonLink>
         </div>
     );
 }

@@ -5,6 +5,10 @@ import LayananCard from '@/Components/Layanan/layananCard';
 import KontakList from '@/Components/Kontak/KontakList';
 import FormInput from '@/Components/Kontak/FormInput';
 import Logo from '@/Components/Navbar/Logo';
+import ButtonLink from '@/Components/ButtonLink';
+import Button from '@/Components/Button';
+import Footer from '@/Components/Footer';
+import Image from '@/Components/AboutUs/image';
 
 export default function Homepage(props) {
     const {title} = props;
@@ -26,7 +30,11 @@ export default function Homepage(props) {
                         hrefDaftar="/"
                         hrefMasuk="/"
                         fontColor="text-primary"
-                        width="w-full"
+                        logoWidth="w-full"
+                        buttonWidth="w-[120px]"
+                        buttonHeight="h-10"
+                        buttonBg="bg-primary"
+                        buttonBgHover="hover:bg-[#0196a0]"
                     />
 
                     <div className="w-full min-h-screen flex flex-col justify-center">
@@ -43,10 +51,14 @@ export default function Homepage(props) {
                             </p>
                         </div>
                         <div>
-                            <button className="w-[237px] h-[70px] bg-[#1D7E5A] hover:bg-[#17654a] hover:duration-300 rounded-lg flex justify-center items-center">
-                                <p className="mr-2 text-white-primary font-bold ">
-                                    Temukan Layanan
-                                </p>
+                            <ButtonLink
+                                width="w-[237px]"
+                                height="h-[70px]"
+                                hrefLink="#layanan"
+                                buttonBg="bg-[#1D7E5A]"
+                                buttonBgHover="hover:bg-[#17654a]"
+                            >
+                                Temukan Layanan
                                 <span className="text-white-primary">
                                     <svg
                                         width="24"
@@ -59,7 +71,7 @@ export default function Homepage(props) {
                                         <path d="M19.704 12L11.212 3.273C11.1421 3.20267 11.0868 3.11917 11.0494 3.02734C11.012 2.93551 10.9931 2.83717 10.9939 2.738C10.9947 2.63884 11.0152 2.54082 11.0542 2.44962C11.0931 2.35843 11.1498 2.27586 11.2209 2.2067C11.2919 2.13754 11.376 2.08317 11.4683 2.04672C11.5605 2.01027 11.659 1.99248 11.7582 1.99437C11.8573 1.99626 11.9551 2.01779 12.0459 2.05772C12.1367 2.09765 12.2186 2.15519 12.287 2.227L21.287 11.477C21.4232 11.617 21.4995 11.8047 21.4995 12C21.4995 12.1953 21.4232 12.383 21.287 12.523L12.287 21.773C12.2186 21.8448 12.1367 21.9023 12.0459 21.9423C11.9551 21.9822 11.8573 22.0037 11.7582 22.0056C11.659 22.0075 11.5605 21.9897 11.4683 21.9533C11.376 21.9168 11.2919 21.8625 11.2209 21.7933C11.1498 21.7241 11.0931 21.6416 11.0542 21.5504C11.0152 21.4592 10.9947 21.3612 10.9939 21.262C10.9931 21.1628 11.012 21.0645 11.0494 20.9727C11.0868 20.8808 11.1421 20.7973 11.212 20.727L19.704 12Z" />
                                     </svg>
                                 </span>
-                            </button>
+                            </ButtonLink>
                         </div>
                     </div>
                 </div>
@@ -70,7 +82,7 @@ export default function Homepage(props) {
             <div id="aboutUs" className="h-[703px] bg-white-primary">
                 <div className="mx-[93px] h-full flex justify-center items-center">
                     <div className="w-3/5">
-                        <h1 className="text-black-primary text-[52px] font-bold leading-[64px] mb-2">
+                        <h1 className="text-black-primary text-[52px] font-bold leading-[64px] mb-6">
                             VokAgri : Nurturing Agriculture Innovation
                         </h1>
                         <p className="text-black-primary">
@@ -85,28 +97,12 @@ export default function Homepage(props) {
                     </div>
                     <div className="w-2/5 flex gap-x-5">
                         <div className="flex flex-col justify-center items-end gap-y-5">
-                            <img
-                                className="hover:scale-105 hover:duration-300"
-                                src="img/gambar1.png"
-                                alt="Gambar 1"
-                            />
-                            <img
-                                className="hover:scale-105 hover:duration-300"
-                                src="img/gambar3.png"
-                                alt="Gambar 3"
-                            />
+                            <Image src="img/gambar1.png" alt="Gambar 1" />
+                            <Image src="img/gambar3.png" alt="Gambar 3" />
                         </div>
                         <div className="flex flex-col justify-center items-end gap-y-5 mb-[100px]">
-                            <img
-                                className="hover:scale-105 hover:duration-300"
-                                src="img/gambar2.png"
-                                alt="Gambar 2"
-                            />
-                            <img
-                                className="hover:scale-105 hover:duration-300"
-                                src="img/gambar4.png"
-                                alt="Gambar 4"
-                            />
+                            <Image src="img/gambar2.png" alt="Gambar 2" />
+                            <Image src="img/gambar4.png" alt="Gambar 4" />
                         </div>
                     </div>
                 </div>
@@ -132,7 +128,7 @@ export default function Homepage(props) {
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Amet, atque?
                         </LayananCard>
-
+                        
                         <LayananCard
                             src="img/iconKonsultasi.png"
                             alt="Icon Informasi"
@@ -211,9 +207,9 @@ export default function Homepage(props) {
                                 type="text"
                                 placeholder="Masukkan pertanyaan"
                             />
-                            <button
+                            <Button
                                 type="button"
-                                className="bg-primary hover:bg-[#06767f] hover:duration-300 flex justify-center items-center w-full h-[66px] rounded-lg"
+                                classname="bg-primary hover:bg-[#0196a0] hover:duration-300 flex justify-center items-center w-full h-[66px] rounded-lg"
                             >
                                 <p className="text-white-primary font-semibold text-2xl">
                                     Kirim
@@ -230,7 +226,7 @@ export default function Homepage(props) {
                                         <path d="M19.704 12L11.212 3.273C11.1421 3.20267 11.0868 3.11917 11.0494 3.02734C11.012 2.93551 10.9931 2.83717 10.9939 2.738C10.9947 2.63884 11.0152 2.54082 11.0542 2.44962C11.0931 2.35843 11.1498 2.27586 11.2209 2.2067C11.2919 2.13754 11.376 2.08317 11.4683 2.04672C11.5605 2.01027 11.659 1.99248 11.7582 1.99437C11.8573 1.99626 11.9551 2.01779 12.0459 2.05772C12.1367 2.09765 12.2186 2.15519 12.287 2.227L21.287 11.477C21.4232 11.617 21.4995 11.8047 21.4995 12C21.4995 12.1953 21.4232 12.383 21.287 12.523L12.287 21.773C12.2186 21.8448 12.1367 21.9023 12.0459 21.9423C11.9551 21.9822 11.8573 22.0037 11.7582 22.0056C11.659 22.0075 11.5605 21.9897 11.4683 21.9533C11.376 21.9168 11.2919 21.8625 11.2209 21.7933C11.1498 21.7241 11.0931 21.6416 11.0542 21.5504C11.0152 21.4592 10.9947 21.3612 10.9939 21.262C10.9931 21.1628 11.012 21.0645 11.0494 20.9727C11.0868 20.8808 11.1421 20.7973 11.212 20.727L19.704 12Z" />
                                     </svg>
                                 </span>
-                            </button>
+                            </Button>
                         </form>
                     </div>
                 </div>
@@ -238,14 +234,7 @@ export default function Homepage(props) {
             {/* Kontak Section End */}
 
             {/* Footer Section Start */}
-            <div id="footer" className="w-full h-[96px] bg-primary">
-                <div className="mx-[93px] h-full flex justify-between items-center">
-                    <Logo hrefHome="/" fontColor="text-white-primary" />
-                    <p className="text-white-primary text-[14px]">
-                        Copyright by VokAgri All Right Reserved. © 2023
-                    </p>
-                </div>
-            </div>
+            <Footer id="footer" />
             {/* Footer Section End */}
         </div>
     );
