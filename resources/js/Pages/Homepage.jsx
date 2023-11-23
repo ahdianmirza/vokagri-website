@@ -4,7 +4,6 @@ import Navbar from '@/Components/Navbar';
 import LayananCard from '@/Components/Layanan/layananCard';
 import KontakList from '@/Components/Kontak/KontakList';
 import FormInput from '@/Components/Kontak/FormInput';
-import Logo from '@/Components/Navbar/Logo';
 import ButtonLink from '@/Components/ButtonLink';
 import Button from '@/Components/Button';
 import Footer from '@/Components/Footer';
@@ -26,7 +25,7 @@ export default function Homepage(props) {
                         hrefTentang="#aboutUs"
                         hrefLayanan="#layanan"
                         hrefKontak="#kontak"
-                        hrefProduk="/"
+                        hrefProduk="/products"
                         hrefDaftar="/"
                         hrefMasuk="/"
                         fontColor="text-primary"
@@ -128,7 +127,7 @@ export default function Homepage(props) {
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Amet, atque?
                         </LayananCard>
-                        
+
                         <LayananCard
                             src="img/iconKonsultasi.png"
                             alt="Icon Informasi"

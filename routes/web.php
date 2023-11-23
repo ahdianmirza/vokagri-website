@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -16,11 +18,9 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Homepage', [
-        'title' => 'Beranda'
-    ]);
-});
+Route::get('/', [HomepageController::class, 'index']);
+
+Route::get('/products', [ProductsController::class, 'index']);
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

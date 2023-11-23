@@ -27,6 +27,7 @@ export default {
             backgroundImage: {
                 "hero-bg": "url('img/heroBackground.png')",
                 "kontak-bg": "url('img/kontakBackground.png')",
+                "product-bg": "url('img/productBackground.png')",
             },
         },
     },

@@ -21,7 +21,7 @@ export default function Navbar(props) {
     } = props;
 
     return (
-        <nav className="flex items-center justify-between mt-[15px]">
+        <nav className="flex items-center justify-between pt-[15px]">
             <Logo width={logoWidth} hrefHome={hrefHome} fontColor={fontColor} />
             <NavbarList
                 hrefBeranda={hrefBeranda}
