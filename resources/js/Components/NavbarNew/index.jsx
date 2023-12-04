@@ -36,13 +36,13 @@ const NavbarNew = () => {
                 />
             </div>
             <Navbar.Collapse>
-                <Navbar.Link className="font-semibold" href="/" active>
+                <Navbar.Link className="md:font-semibold" href="/" active>
                     Beranda
                 </Navbar.Link>
-                <Navbar.Link className="font-semibold" href="#aboutUs">Tentang</Navbar.Link>
-                <Navbar.Link className="font-semibold" href="#layanan">Layanan</Navbar.Link>
-                <Navbar.Link className="font-semibold" href="#kontak">Kontak</Navbar.Link>
-                <Navbar.Link className="font-semibold" href="/products">Produk</Navbar.Link>
+                <Navbar.Link className="md:font-semibold" href="#aboutUs">Tentang</Navbar.Link>
+                <Navbar.Link className="md:font-semibold" href="#layanan">Layanan</Navbar.Link>
+                <Navbar.Link className="md:font-semibold" href="#kontak">Kontak</Navbar.Link>
+                <Navbar.Link className="md:font-semibold" href="/products">Produk</Navbar.Link>
             </Navbar.Collapse>
         </Navbar>
     );
