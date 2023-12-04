@@ -8,6 +8,8 @@ export default {
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
         "./resources/js/**/*.jsx",
+        "./node_modules/flowbite/**/*.js",
+        "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
     ],
 
     theme: {
@@ -20,6 +22,7 @@ export default {
             },
             colors: {
                 primary: "#0E4F55",
+                "primary-hover": "#157881",
                 "white-primary": "#F8FAFC",
                 page: "#EFFAF4",
                 "black-primary": "#3B3B3B",
@@ -32,5 +35,5 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [forms, require("flowbite/plugin")],
 };
