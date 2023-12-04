@@ -11,7 +11,7 @@ const NavbarNew = () => {
     return (
         <Navbar
             id="navbar"
-            className="absolute w-full z-20 top-0 start-0 transition duration-200 px-4 md:px-[93px] bg-transparent"
+            className="absolute w-full z-20 top-0 start-0 transition duration-200 px-4 md:px-6 lg:px-[93px] bg-transparent"
             fluid
             rounded
         >

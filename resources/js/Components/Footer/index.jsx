@@ -6,7 +6,7 @@ export default function Footer(props) {
     return (
         <div>
             <div id={id} className="h-[96px] w-full bg-primary">
-                <div className="px-4 md:p-0 md:mx-[93px] h-full flex items-center">
+                <div className="px-4 md:px-6 lg:mx-[93px] h-full flex items-center">
                     <div className="w-full flex justify-between items-center">
                         <Logo width="w-full" hrefHome="/" fontColor="text-white-primary" />
                         <p className="w-full flex justify-end text-white-primary text-xs md:text-[14px]">

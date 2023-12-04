@@ -20,12 +20,12 @@ export default function Homepage(props) {
                 id="hero"
                 className="bg-hero-bg min-h-screen bg-auto bg-left md:bg-cover"
             >
-                <div className="mx-4 md:mx-[93px]">
+                <div className="mx-4 md:mx-6 lg:mx-[93px]">
                     <NavbarNew />
 
                     <div className="w-full min-h-screen flex flex-col justify-center">
                         <div className="md:w-1/2 mb-6">
-                            <h1 className="text-white-primary text-center md:text-start text-3xl md:text-[52px] font-bold md:leading-[64px] mb-6">
+                            <h1 className="text-white-primary text-center md:text-start text-3xl md:text-[40px] lg:text-[52px] font-bold md:leading-10 lg:leading-[64px] mb-6">
                                 Raih Keuntungan Usaha Pertanianmu
                             </h1>
                             <p className="text-center md:text-start text-white-primary">
@@ -60,10 +60,10 @@ export default function Homepage(props) {
             {/* Hero Section End */}
 
             {/* About Us Section Start */}
-            <div id="aboutUs" className="h-fit md:h-[703px] bg-white-primary">
-                <div className="px-4 py-10 md:p-0 md:mx-[93px] h-full flex flex-col md:flex-row justify-center items-center">
-                    <div className="md:w-3/5">
-                        <h1 className="md:text-start text-black-primary text-2xl md:text-[52px] font-bold md:leading-[64px] mb-2 md:mb-6">
+            <div id="aboutUs" className="h-fit lg:h-[703px] bg-white-primary">
+                <div className="px-4 pt-10 md:px-6 lg:mx-[93px] h-full flex flex-col lg:flex-row justify-center items-center">
+                    <div className="lg:w-3/5 mb-6 lg:mb-0">
+                        <h1 className="md:text-start text-black-primary text-2xl md:text-[40px] lg:text-[52px] font-bold md:leading-[64px] mb-2 lg:mb-6">
                             VokAgri : Nurturing Agriculture Innovation
                         </h1>
                         <p className="text-black-primary text-justify md:text-start">
@@ -76,12 +76,12 @@ export default function Homepage(props) {
                             sederhana dan mudah dipahami oleh pengguna.
                         </p>
                     </div>
-                    <div className="md:w-2/5 flex md:flex-row gap-x-2 md:gap-x-5">
-                        <div className="flex flex-col justify-center items-end gap-y-2 md:gap-y-5">
+                    <div className="lg:w-2/5 flex lg:flex-row gap-x-2 lg:gap-x-5">
+                        <div className="flex flex-col justify-center items-end gap-y-2 md:pt-0 md:gap-y-5">
                             <Image src="img/gambar1.png" alt="Gambar 1" />
                             <Image src="img/gambar3.png" alt="Gambar 3" />
                         </div>
-                        <div className="flex flex-col justify-center items-end gap-y-2 md:gap-y-5 mb-20 md:mb-[100px]">
+                        <div className="flex flex-col lg:justify-center items-end gap-y-2 md:gap-y-5 pb-20 md:pb-10 lg:pb-[100px]">
                             <Image src="img/gambar2.png" alt="Gambar 2" />
                             <Image src="img/gambar4.png" alt="Gambar 4" />
                         </div>
@@ -91,13 +91,13 @@ export default function Homepage(props) {
             {/* About Us Section End */}
 
             {/* Layanan Section Start */}
-            <div id="layanan" className="h-fit md:h-[703px] bg-page">
-                <div className="px-4 py-10 md:p-0 text-primary h-full flex flex-col justify-center items-center">
+            <div id="layanan" className="h-fit lg:h-[703px] bg-page">
+                <div className="px-4 py-10 md:px-6 lg:p-0 text-primary h-full flex flex-col justify-center items-center">
                     <div className="flex flex-col justify-center items-center mb-6 md:mb-12">
-                        <h1 className="font-semibold text-3xl md:text-5xl">
+                        <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
                             Layanan Kami
                         </h1>
-                        <p className="text-center md:text-lg">
+                        <p className="text-center lg:text-lg">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Repellendus, accusamus?
                         </p>
@@ -136,20 +136,17 @@ export default function Homepage(props) {
             {/* Layanan Section End */}
 
             {/* Kontak Section End */}
-            <div
-                id="kontak"
-                className="bg-kontak-bg min-h-screen bg-cover"
-            >
-                <div className="px-4 py-10 md:mx-[93px] flex flex-col md:flex-row md:flex-wrap items-center">
-                    <div className="md:w-1/2 md:h-screen flex flex-col justify-center mb-10">
+            <div id="kontak" className="bg-kontak-bg min-h-screen bg-cover">
+                <div className="px-4 py-10 md:px-6 lg:mx-[93px] flex flex-col md:flex-row md:flex-wrap md:justify-between items-center">
+                    <div className="lg:w-1/2 md:h-screen flex flex-col justify-center mb-10">
                         <div className="mb-6 md:mb-8">
-                            <h1 className="text-3xl md:text-[40px] text-white-primary font-bold md:leading-[56px]">
+                            <h1 className="text-3xl md:text-4xl lg:text-[40px] text-white-primary font-bold md:leading-[56px]">
                                 Butuh Konsultasi ?
                             </h1>
-                            <h1 className="text-3xl md:text-[40px] text-white-primary font-bold md:leading-[56px]">
+                            <h1 className="text-3xl md:text-4xl lg:text-[40px] text-white-primary font-bold md:leading-[56px]">
                                 Silahkan Kontak Kami
                             </h1>
-                            <h1 className="text-3xl md:text-[40px] text-white-primary font-bold md:leading-[56px]">
+                            <h1 className="text-3xl md:text-4xl lg:text-[40px] text-white-primary font-bold md:leading-[56px]">
                                 Kami Siap Membantu
                             </h1>
                         </div>
