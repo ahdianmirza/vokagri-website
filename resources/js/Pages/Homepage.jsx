@@ -138,7 +138,7 @@ export default function Homepage(props) {
             {/* Kontak Section End */}
             <div
                 id="kontak"
-                className="bg-kontak-bg min-h-screen bg-auto bg-left md:bg-cover"
+                className="bg-kontak-bg min-h-screen bg-cover"
             >
                 <div className="px-4 py-10 md:mx-[93px] flex flex-col md:flex-row md:flex-wrap items-center">
                     <div className="md:w-1/2 md:h-screen flex flex-col justify-center mb-10">
