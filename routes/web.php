@@ -18,9 +18,9 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [HomepageController::class, 'index']);
+Route::get('/', [HomepageController::class, 'index'])->name('homepage');
 
-Route::get('/products', [ProductsController::class, 'index']);
+Route::get('/products', [ProductsController::class, 'index'])->name('products');
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

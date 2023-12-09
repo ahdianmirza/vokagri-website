@@ -6,6 +6,10 @@
     @apply w-full fixed z-[999] bg-white transition duration-200 bg-opacity-70 backdrop-blur-md border-b border-gray-200 dark:border-gray-600;
 }
 
+.shopping-cart-fixed {
+    @apply text-black-primary hover:text-white-primary transition duration-200;
+}
+
 .navbar-click {
     @apply bg-white transition duration-100 bg-opacity-70 backdrop-blur-md border-b border-gray-200 dark:border-gray-600;
 }
