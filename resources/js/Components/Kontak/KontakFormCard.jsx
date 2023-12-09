@@ -4,7 +4,7 @@ import { Button, Card, Label, TextInput } from "flowbite-react";
 
 const KontakFormCard = () => {
     return (
-        <Card className="w-full md:max-w-md lg:max-w-sm">
+        <Card className="w-full max-w-sm sm:max-w-md lg:max-w-lg">
             <h1 className="font-semibold text-primary text-2xl md:text-3xl lg:text-[40px] text-center md:leading-[56px]">
                 Form Pertanyaan
             </h1>

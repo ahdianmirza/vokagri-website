@@ -42,7 +42,7 @@ const NavbarNew = () => {
                 <Navbar.Link className="md:font-semibold" href="#aboutUs">Tentang</Navbar.Link>
                 <Navbar.Link className="md:font-semibold" href="#layanan">Layanan</Navbar.Link>
                 <Navbar.Link className="md:font-semibold" href="#kontak">Kontak</Navbar.Link>
-                <Navbar.Link className="md:font-semibold" href="/products">Produk</Navbar.Link>
+                {/* <Navbar.Link className="md:font-semibold" href="/products">Produk</Navbar.Link> */}
             </Navbar.Collapse>
         </Navbar>
     );
